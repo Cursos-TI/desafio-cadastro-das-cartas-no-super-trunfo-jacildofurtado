@@ -83,26 +83,24 @@ int main() {
 
     // Exibição dos Dados das Cartas:
 
-    //Carta 1
-    printf("Carta 1:\n");
+    // Mostrar Carta 1
+    printf("Carta 1\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", codigoDaCarta_1);
     printf("Nome da Cidade: %s\n", nomeDaCidade_1);
     printf("População: %d\n", populacao_1);
-    printf("Área: %f km²\n", areaDaCidade_1);
-    printf("PIB: %f bilhões de reais\n", PIB_1);
+    printf("Área: %.2f km²\n", areaDaCidade_1);
+    printf("PIB: %.2f bilhões de reais\n", PIB_1);
     printf("Número de pontos Turísticos: %d\n\n", numDePontoTuristicos_1);
 
-    printf("\n"); // Deixa uma linha em branco para gerar visualmente no terminal um "pulo de linha".
-
-    //Carta 2
-    printf("Carta 2:\n");
+    // Mostrar Carta 2
+    printf("Carta 2\n");
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", codigoDaCarta_2);
     printf("Nome da Cidade: %s\n", nomeDaCidade_2);
     printf("População: %d\n", populacao_2);
-    printf("Área: %f km²\n", areaDaCidade_2);
-    printf("PIB: %f bilhões de reais\n", PIB_2);
+    printf("Área: %.2f km²\n", areaDaCidade_2);
+    printf("PIB: %.2f bilhões de reais\n", PIB_2);
     printf("Número de pontos Turísticos: %d\n", numDePontoTuristicos_2);
 
     return 0; // Encerra o programa.
