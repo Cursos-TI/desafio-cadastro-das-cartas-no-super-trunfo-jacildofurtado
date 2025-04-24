@@ -2,9 +2,6 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
 
@@ -28,12 +25,15 @@ int main() {
     
     // Cadastro das Cartas:
 
-    // Carta 1:
+    /*O bloco de código a seguir primeiramente imprime uma mensagem (usando 'printf') pedindo para o usuário inserir determinado dado e em seguida lê esse dado inserido (usando 'scanf') e o armazena na variável determinada*/
 
-    printf("Cadastrar carta 1\n");
+    // Carta 1:
+    printf("Cadastrar carta 1\n"); // Mostra uma mensagem para o usuário cadastrar uma carta.
+
+    printf("\n"); // Deixa uma linha em branco para gerar visualmente no terminal um "pulo de linha".
 
     printf("Insira uma letra, de A a H correspondente, ao Estado da carta: \n"); // Requisição para o usuário inserir o dado.
-    scanf("%c", &estado_1); // Leitura e armazenamento do dado inserido pelo usuário.
+    scanf("%c", &estado_1); // Ler e armazena o dado inserido pelo usuário na variável determinada.
 
     printf("Insira o código da carta, letra do estado seguida de um número de 01 a 04. Ex: A01: \n");
     scanf("%s", codigoDaCarta_1);
@@ -53,12 +53,13 @@ int main() {
     printf("Insira o número de pontos turísticos da cidade: \n");
     scanf("%d", &numDePontoTuristicos_1);
 
+    printf("\n"); // Deixa uma linha em branco para gerar visualmente no terminal um "pulo de linha".
+
     // Carta 2:
+    printf("Cadastrar carta 2\n"); // Mostra uma mensagem para o usuário cadastrar uma carta.
 
-    printf("Cadastrar carta 2\n");
-
-    printf("Insira uma letra, de A a H correspondente, ao Estado da carta: \n");
-    scanf(" %c", &estado_2);
+    printf("Insira uma letra, de A a H correspondente, ao Estado da carta: \n"); // Requisição para o usuário inserir o dado.
+    scanf(" %c", &estado_2); // Leitura e armazenamento do dado inserido pelo usuário.
 
     printf("Insira o código da carta, letra do estado seguida de um número de 01 a 04. Ex: A01: \n");
     scanf("%s", codigoDaCarta_2);
@@ -77,9 +78,32 @@ int main() {
 
     printf("Insira o número de pontos turísticos da cidade: \n");
     scanf("%d", &numDePontoTuristicos_2);
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    printf("\n"); // Deixa uma linha em branco para gerar visualmente no terminal um "pulo de linha".
+
+    // Exibição dos Dados das Cartas:
+
+    //Carta 1
+    printf("Carta 1:\n");
+    printf("Estado: %c\n", estado_1);
+    printf("Código: %s\n", codigoDaCarta_1);
+    printf("Nome da Cidade: %s\n", nomeDaCidade_1);
+    printf("População: %d\n", populacao_1);
+    printf("Área: %f km²\n", areaDaCidade_1);
+    printf("PIB: %f bilhões de reais\n", PIB_1);
+    printf("Número de pontos Turísticos: %d\n\n", numDePontoTuristicos_1);
+
+    printf("\n"); // Deixa uma linha em branco para gerar visualmente no terminal um "pulo de linha".
+
+    //Carta 2
+    printf("Carta 2:\n");
+    printf("Estado: %c\n", estado_2);
+    printf("Código: %s\n", codigoDaCarta_2);
+    printf("Nome da Cidade: %s\n", nomeDaCidade_2);
+    printf("População: %d\n", populacao_2);
+    printf("Área: %f km²\n", areaDaCidade_2);
+    printf("PIB: %f bilhões de reais\n", PIB_2);
+    printf("Número de pontos Turísticos: %d\n", numDePontoTuristicos_2);
+
+    return 0; // Encerra o programa.
 }
